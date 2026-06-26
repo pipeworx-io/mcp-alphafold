@@ -2,7 +2,7 @@
 
 AlphaFold DB MCP — predicted protein structures.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
 
 ## Tools
 
@@ -11,7 +11,7 @@ Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents 
 | `prediction` | Full prediction metadata + structure file URLs (PDB, CIF, PAE). |
 | `summary` | Short summary for a prediction (organism, sequence, mean pLDDT). |
 | `annotations` | Sequence-level annotations (e.g. MUTAGEN, LOW_CONFIDENCE_REGIONS). |
-| `uniprot` | Alias for prediction — fetch by UniProt accession explicitly. |
+| `uniprot` | Fetch AlphaFold structure prediction metadata (PDB/CIF/PAE download URLs, pLDDT scores) by UniProt accession (e.g. "P00533"); equivalent to `prediction` but takes uniprot_id explicitly. |
 
 ## Quick Start
 
@@ -27,7 +27,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 965+ data sources:
 
 ```json
 {

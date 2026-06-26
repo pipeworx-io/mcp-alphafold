@@ -59,7 +59,7 @@ const tools: McpToolExport['tools'] = [
   },
   {
     name: 'uniprot',
-    description: 'Alias for prediction — fetch by UniProt accession explicitly.',
+    description: 'Fetch AlphaFold structure prediction metadata (PDB/CIF/PAE download URLs, pLDDT scores) by UniProt accession (e.g. "P00533"); equivalent to `prediction` but takes uniprot_id explicitly.',
     inputSchema: {
       type: 'object',
       properties: { uniprot_id: { type: 'string' } },

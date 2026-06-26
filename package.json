@@ -1,7 +1,7 @@
 {
   "name": "@pipeworx/mcp-alphafold",
   "version": "0.1.0",
-  "description": "AlphaFold predicted protein 3D structures (EBI)",
+  "description": "AlphaFold DB MCP — predicted protein structures.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
