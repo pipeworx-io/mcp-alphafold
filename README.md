@@ -1,17 +1,21 @@
-# mcp-alphafold
+# @pipeworx/alphafold
 
-AlphaFold DB MCP — predicted protein structures.
+EBI [AlphaFold Protein Structure Database](https://alphafold.ebi.ac.uk/) MCP — predicted 3-D protein structures for ~214 M sequences. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 965+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `prediction` | Full prediction metadata + structure file URLs (PDB, CIF, PAE). |
-| `summary` | Short summary for a prediction (organism, sequence, mean pLDDT). |
-| `annotations` | Sequence-level annotations (e.g. MUTAGEN, LOW_CONFIDENCE_REGIONS). |
-| `uniprot` | Fetch AlphaFold structure prediction metadata (PDB/CIF/PAE download URLs, pLDDT scores) by UniProt accession (e.g. "P00533"); equivalent to `prediction` but takes uniprot_id explicitly. |
+- `prediction(qualifier)` — full prediction metadata + file URLs (PDB, CIF, PAE)
+- `summary(qualifier)` — short structure summary
+- `annotations(qualifier, type?)` — sequence-level annotations (regions of low pLDDT, etc)
+- `uniprot(uniprot_id)` — same as `prediction` but explicit UniProt accession
+
+`qualifier` is a UniProt accession (e.g. `P00533`).
+
+## Data source
+
+`https://alphafold.ebi.ac.uk/api/`
 
 ## Quick Start
 
@@ -27,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 965+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
