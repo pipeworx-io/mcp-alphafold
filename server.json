@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/alphafold",
   "title": "Alphafold",
   "description": "AlphaFold DB MCP — predicted protein structures.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/alphafold",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-alphafold",
