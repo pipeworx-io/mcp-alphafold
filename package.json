@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-alphafold",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AlphaFold DB MCP — predicted protein structures.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-ef91b78c76b19d6568ee5539c52ab282429501d8351aaa89d154f9706ebfb17d",
-    "sourceCommit": "60f04b68c347e970c6be94a53439d1364061fc06"
+    "sourceHash": "v1-75ab1cfdc0a1e2a211ac0db8254eced00b75ab30bfd1ae8fdaf4add8d936089c",
+    "sourceCommit": "dca20ba6e13a9aa1c9f2918fc2ddaffe4cc30e5c"
   }
 }
