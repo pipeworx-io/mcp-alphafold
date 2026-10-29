@@ -1,0 +1,67 @@
+[
+  {
+    "name": "prediction",
+    "description": "Full prediction metadata + structure file URLs (PDB, CIF, PAE).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "qualifier": {
+          "type": "string",
+          "description": "UniProt accession, e.g. \"P00533\""
+        }
+      },
+      "required": [
+        "qualifier"
+      ]
+    }
+  },
+  {
+    "name": "summary",
+    "description": "Short summary for a prediction (organism, sequence, mean pLDDT).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "qualifier": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "qualifier"
+      ]
+    }
+  },
+  {
+    "name": "annotations",
+    "description": "Sequence-level annotations (e.g. MUTAGEN, LOW_CONFIDENCE_REGIONS).",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "qualifier": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "description": "Annotation type filter (optional)."
+        }
+      },
+      "required": [
+        "qualifier"
+      ]
+    }
+  },
+  {
+    "name": "uniprot",
+    "description": "Fetch AlphaFold structure prediction metadata (PDB/CIF/PAE download URLs, pLDDT scores) by UniProt accession (e.g. \"P00533\"); equivalent to `prediction` but takes uniprot_id explicitly.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "uniprot_id": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "uniprot_id"
+      ]
+    }
+  }
+]

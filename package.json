@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-alphafold",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "AlphaFold DB MCP — predicted protein structures.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-alphafold": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "alphafold"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-alphafold.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/alphafold",
   "pipeworx": {
-    "sourceHash": "v1-3905501f00f95a75fe503749cb8069e2000f4e7d94663bac30d1c44f0819e998",
-    "sourceCommit": "71f5325b13bb0ea0de2f0f7207885962ec91a484"
+    "mode": "gateway",
+    "slug": "alphafold",
+    "gatewaySlug": "alphafold",
+    "sourceHash": "v1-cac73275484a3da9485a18449a09ffa31702eed53494ed8ddc8086192cf9e4e9",
+    "sourceCommit": "c6136b81713e72ccb22977ca0c0cd981f8c3f081"
   }
 }
